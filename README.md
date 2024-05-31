@@ -1,150 +1,129 @@
-# Apache SeaTunnel
-
-<img src="https://seatunnel.apache.org/image/logo.png" alt="SeaTunnel Logo" height="200px" align="right" />
-
-[![Build Workflow](https://github.com/apache/seatunnel/actions/workflows/build_main.yml/badge.svg?branch=dev)](https://github.com/apache/seatunnel/actions/workflows/build_main.yml)
-[![Join Slack](https://img.shields.io/badge/slack-%23seatunnel-4f8eba?logo=slack)](https://s.apache.org/seatunnel-slack)
-[![Twitter Follow](https://img.shields.io/twitter/follow/ASFSeaTunnel.svg?label=Follow&logo=twitter)](https://twitter.com/ASFSeaTunnel)
-
-## Table of Contents
-- [Overview](#overview)
-- [Why Choose SeaTunnel](#why-choose-seatunnel)
-- [Key Features](#key-features)
-- [SeaTunnel Workflow](#seatunnel-workflow)
-- [Supported Connectors](#supported-connectors)
-- [Getting Started](#getting-started)
-- [Use Cases](#use-cases)
-- [Code of Conduct](#code-of-conduct)
-- [Contributors](#contributors)
-- [How to Compile](#how-to-compile)
-- [Contact Us](#contact-us)
-- [Landscapes](#landscapes)
-- [Apache SeaTunnel Web Project](#apache-seaTunnel-web-project)
-- [Our Users](#our-users)
-- [License](#license)
-- [Frequently Asked Questions](#frequently-asked-questions)
-
-## Overview
-
-SeaTunnel is a next-generation, high-performance, distributed data integration tool, capable of synchronizing vast amounts of data daily. It's trusted by numerous companies for its efficiency and stability.
-
-
-## Why Choose SeaTunnel
-
-SeaTunnel addresses common data integration challenges:
-
-- **Diverse Data Sources**: Seamlessly integrates with hundreds of evolving data sources.
-  
-- **Complex Synchronization Scenarios**: Supports various synchronization methods, including real-time, CDC, and full database synchronization.
-  
-- **Resource Efficiency**: Minimizes computing resources and JDBC connections for real-time synchronization.
-  
-- **Quality and Monitoring**: Provides data quality and monitoring to prevent data loss or duplication.
-
-## Key Features
-
-- **Diverse Connectors**: Offers support for over 100 connectors, with ongoing expansion.
-  
-- **Batch-Stream Integration**: Easily adaptable connectors simplify data integration management.
-  
-- **Distributed Snapshot Algorithm**: Ensures data consistency across synchronized data.
-  
-- **Multi-Engine Support**: Works with SeaTunnel Zeta Engine, Flink, and Spark.
-  
-- **JDBC Multiplexing and Log Parsing**: Efficiently synchronizes multi-tables and databases.
-  
-- **High Throughput and Low Latency**: Provides high-throughput data synchronization with low latency.
-  
-- **Real-Time Monitoring**: Offers detailed insights during synchronization.
-  
-- **Two Job Development Methods**: Supports coding and visual job management with the [SeaTunnel web project](https://github.com/apache/seatunnel-web).
-
-## SeaTunnel Workflow
-
-![SeaTunnel Workflow](docs/en/images/architecture_diagram.png)
-
-Configure jobs, select execution engines, and parallelize data using Source Connectors. Easily develop and extend connectors to meet your needs.
-
-## Supported Connectors
-
-- [Source Connectors](https://seatunnel.apache.org/docs/category/source-v2)
-- [Sink Connectors](https://seatunnel.apache.org/docs/category/sink-v2)
-- [Transform Connectors](docs/en/transform-v2)
-
-For a list of connectors and their health status, visit the [Connector Status](docs/en/Connector-v2-release-state.md).
-
-## Getting Started
-
-Download SeaTunnel from the [official website](https://seatunnel.apache.org/download).
-
-Choose your runtime execution engine:
-- [SeaTunnel Zeta Engine](https://seatunnel.apache.org/docs/start-v2/locally/quick-start-seatunnel-engine/)
-- [Spark](https://seatunnel.apache.org/docs/start-v2/locally/quick-start-spark)
-- [Flink](https://seatunnel.apache.org/docs/start-v2/locally/quick-start-flink)
-
-## Use Cases
-
-Explore real-world use cases of SeaTunnel, such as Weibo, Tencent Cloud, Sina, Sogou, and Yonghui Superstores. More use cases can be found on the [SeaTunnel blog](https://seatunnel.apache.org/blog).
-
-## Code of Conduct
-
-Participate in this project following the Contributor Covenant [Code of Conduct](https://www.apache.org/foundation/policies/conduct).
-
-## Contributors
-
-We appreciate all developers for their contributions. See the [list of contributors](https://github.com/apache/seatunnel/graphs/contributors).
-
-## How to Compile
-
-Refer to this [document](docs/en/contribution/setup.md) for compilation instructions.
-
-## Contact Us
-
-- Mail list: **dev@seatunnel.apache.org**. Subscribe by sending an email to `dev-subscribe@seatunnel.apache.org`.
-
-- Slack: [Join SeaTunnel Slack](https://s.apache.org/seatunnel-slack)
-
-- Twitter: [ASFSeaTunnel on Twitter](https://twitter.com/ASFSeaTunnel)
-
-## Landscapes
-
-SeaTunnel enriches the [CNCF CLOUD NATIVE Landscape](https://landscape.cncf.io/?landscape=observability-and-analysis&license=apache-license-2-0).
-
-## Apache SeaTunnel Web Project
-
-SeaTunnel Web is a web project that provides visual management of jobs, scheduling, running and monitoring capabilities. It is developed based on the SeaTunnel Connector API and the SeaTunnel Zeta Engine. It is a web project that can be deployed independently. It is also a sub-project of SeaTunnel.
-For more information, please refer to [SeaTunnel Web](https://github.com/apache/seatunnel-web)
-
-## Our Users
-
-Companies and organizations worldwide use SeaTunnel for research, production, and commercial products. Visit our [user page](https://seatunnel.apache.org/user) for more information.
-
-## License
-
-[Apache 2.0 License](LICENSE)
-
-## Frequently Asked Questions
-
-### 1. How do I install SeaTunnel?
-
-Follow the [installation guide](https://seatunnel.apache.org/docs/2.3.3/start-v2/locally/deployment/) on our website to get started.
-
-### 2. How can I contribute to SeaTunnel?
-
-We welcome contributions! Please refer to our [Contribution Guidelines](https://github.com/apache/seatunnel/blob/dev/docs/en/contribution/coding-guide.md) for details.
-
-### 3. How do I report issues or request features?
-
-You can report issues or request features on our [GitHub repository](https://github.com/apache/seatunnel/issues).
-
-### 4. Can I use SeaTunnel for commercial purposes?
-
-Yes, SeaTunnel is available under the Apache 2.0 License, allowing commercial use.
-
-### 5. Where can I find documentation and tutorials?
-
-Our [official documentation](https://seatunnel.apache.org/docs) includes detailed guides and tutorials to help you get started.
-
-### 7. Is there a community or support channel?
-
-Join our Slack community for support and discussions: [SeaTunnel Slack](https://s.apache.org/seatunnel-slack).
+<div class="Box-sc-g0xbh4-0 bJMeLZ js-snippet-clipboard-copy-unpositioned" data-hpc="true"><article class="markdown-body entry-content container-lg" itemprop="text"><div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">阿帕奇海上隧道</font></font></h1><a id="user-content-apache-seatunnel" class="anchor" aria-label="永久链接：Apache SeaTunnel" href="#apache-seatunnel"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/0d6fa1cb036e5a50ac61711bc48fb968d8d218113042eed3f2f486ef9880432f/68747470733a2f2f73656174756e6e656c2e6170616368652e6f72672f696d6167652f6c6f676f2e706e67"><img src="https://camo.githubusercontent.com/0d6fa1cb036e5a50ac61711bc48fb968d8d218113042eed3f2f486ef9880432f/68747470733a2f2f73656174756e6e656c2e6170616368652e6f72672f696d6167652f6c6f676f2e706e67" alt="海上隧道标志" height="200px" align="right" data-canonical-src="https://seatunnel.apache.org/image/logo.png" style="max-width: 100%;"></a></p>
+<p dir="auto"><a href="https://github.com/apache/seatunnel/actions/workflows/build_main.yml"><img src="https://github.com/apache/seatunnel/actions/workflows/build_main.yml/badge.svg?branch=dev" alt="构建工作流程" style="max-width: 100%;"></a>
+<a href="https://s.apache.org/seatunnel-slack" rel="nofollow"><img src="https://camo.githubusercontent.com/3938ed9dc74fa4e79be62cae70c71b2fcee84980e4d0eb67a8087b81ea758719/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f736c61636b2d25323373656174756e6e656c2d3466386562613f6c6f676f3d736c61636b" alt="加入 Slack" data-canonical-src="https://img.shields.io/badge/slack-%23seatunnel-4f8eba?logo=slack" style="max-width: 100%;"></a>
+<a href="https://twitter.com/ASFSeaTunnel" rel="nofollow"><img src="https://camo.githubusercontent.com/96afaad225e67023f4b1e504506321722b9d25c2afac4d7c23519b8d59c0d048/68747470733a2f2f696d672e736869656c64732e696f2f747769747465722f666f6c6c6f772f41534653656154756e6e656c2e7376673f6c6162656c3d466f6c6c6f77266c6f676f3d74776974746572" alt="Twitter 关注" data-canonical-src="https://img.shields.io/twitter/follow/ASFSeaTunnel.svg?label=Follow&amp;logo=twitter" style="max-width: 100%;"></a></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">目录</font></font></h2><a id="user-content-table-of-contents" class="anchor" aria-label="固定链接：目录" href="#table-of-contents"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="#overview"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">概述</font></font></a></li>
+<li><a href="#why-choose-seatunnel"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">为何选择 SeaTunnel</font></font></a></li>
+<li><a href="#key-features"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">主要特征</font></font></a></li>
+<li><a href="#seatunnel-workflow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SeaTunnel 工作流程</font></font></a></li>
+<li><a href="#supported-connectors"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">支持的连接器</font></font></a></li>
+<li><a href="#getting-started"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">入门</font></font></a></li>
+<li><a href="#use-cases"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用例</font></font></a></li>
+<li><a href="#code-of-conduct"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">行为守则</font></font></a></li>
+<li><a href="#contributors"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">贡献者</font></font></a></li>
+<li><a href="#how-to-compile"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如何编译</font></font></a></li>
+<li><a href="#contact-us"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">联系我们</font></font></a></li>
+<li><a href="#landscapes"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">景观</font></font></a></li>
+<li><a href="#apache-seaTunnel-web-project"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Apache SeaTunnel Web 项目</font></font></a></li>
+<li><a href="#our-users"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们的用户</font></font></a></li>
+<li><a href="#license"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">执照</font></font></a></li>
+<li><a href="#frequently-asked-questions"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">经常问的问题</font></font></a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">概述</font></font></h2><a id="user-content-overview" class="anchor" aria-label="固定链接：概述" href="#overview"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SeaTunnel 是新一代高性能分布式数据集成工具，能够每天同步大量数据，其高效性和稳定性受到众多公司的信赖。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">为何选择 SeaTunnel</font></font></h2><a id="user-content-why-choose-seatunnel" class="anchor" aria-label="永久链接：为何选择 SeaTunnel" href="#why-choose-seatunnel"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SeaTunnel 解决了常见的数据集成挑战：</font></font></p>
+<ul dir="auto">
+<li>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">多样化的数据源</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：与数百种不断发展的数据源无缝集成。</font></font></p>
+</li>
+<li>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">复杂的同步场景</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：支持多种同步方式，包括实时、CDC、全库同步。</font></font></p>
+</li>
+<li>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">资源效率</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：最大限度地减少计算资源和 JDBC 连接以实现实时同步。</font></font></p>
+</li>
+<li>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">质量和监控</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：提供数据质量和监控，以防止数据丢失或重复。</font></font></p>
+</li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">主要特征</font></font></h2><a id="user-content-key-features" class="anchor" aria-label="固定链接：主要特点" href="#key-features"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">多样化的连接器</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：支持超过 100 种连接器，并不断扩展。</font></font></p>
+</li>
+<li>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">批流集成</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：易于适应的连接器简化了数据集成管理。</font></font></p>
+</li>
+<li>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">分布式快照算法</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：确保同步数据的数据一致性。</font></font></p>
+</li>
+<li>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">多引擎支持</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：与 SeaTunnel Zeta Engine、Flink 和 Spark 配合使用。</font></font></p>
+</li>
+<li>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">JDBC 多路复用和日志解析</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：有效同步多表和数据库。</font></font></p>
+</li>
+<li>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">高吞吐量和低延迟</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：提供低延迟的高吞吐量数据同步。</font></font></p>
+</li>
+<li>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">实时监控</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：同步期间提供详细的见解。</font></font></p>
+</li>
+<li>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">两种作业开发方法：使用</font></font></strong><font style="vertical-align: inherit;"></font><a href="https://github.com/apache/seatunnel-web"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SeaTunnel 网络项目</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">支持编码和可视化作业管理</font><font style="vertical-align: inherit;">。</font></font></p>
+</li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SeaTunnel 工作流程</font></font></h2><a id="user-content-seatunnel-workflow" class="anchor" aria-label="永久链接：SeaTunnel 工作流程" href="#seatunnel-workflow"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="/apache/seatunnel/blob/dev/docs/en/images/architecture_diagram.png"><img src="/apache/seatunnel/raw/dev/docs/en/images/architecture_diagram.png" alt="SeaTunnel 工作流程" style="max-width: 100%;"></a></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用源连接器配置作业、选择执行引擎并并行化数据。轻松开发和扩展连接器以满足您的需求。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">支持的连接器</font></font></h2><a id="user-content-supported-connectors" class="anchor" aria-label="永久链接：支持的连接器" href="#supported-connectors"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="https://seatunnel.apache.org/docs/category/source-v2" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">源连接器</font></font></a></li>
+<li><a href="https://seatunnel.apache.org/docs/category/sink-v2" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">水槽连接器</font></font></a></li>
+<li><a href="/apache/seatunnel/blob/dev/docs/en/transform-v2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">变换连接器</font></font></a></li>
+</ul>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">有关连接器及其健康状态的列表，请访问</font></font><a href="/apache/seatunnel/blob/dev/docs/en/Connector-v2-release-state.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">连接器状态</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">入门</font></font></h2><a id="user-content-getting-started" class="anchor" aria-label="永久链接：入门" href="#getting-started"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"></font><a href="https://seatunnel.apache.org/download" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">从官方网站</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">下载 SeaTunnel </font><font style="vertical-align: inherit;">。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">选择您的运行时执行引擎：</font></font></p>
+<ul dir="auto">
+<li><a href="https://seatunnel.apache.org/docs/start-v2/locally/quick-start-seatunnel-engine/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">海隧道 Zeta 发动机</font></font></a></li>
+<li><a href="https://seatunnel.apache.org/docs/start-v2/locally/quick-start-spark" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">火花</font></font></a></li>
+<li><a href="https://seatunnel.apache.org/docs/start-v2/locally/quick-start-flink" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Flink</font></font></a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用例</font></font></h2><a id="user-content-use-cases" class="anchor" aria-label="永久链接：用例" href="#use-cases"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">探索 SeaTunnel 的实际用例，例如微博、腾讯云、新浪、搜狗和永辉超市。更多用例可在</font></font><a href="https://seatunnel.apache.org/blog" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SeaTunnel 博客</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">上找到。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">行为守则</font></font></h2><a id="user-content-code-of-conduct" class="anchor" aria-label="永久链接：行为准则" href="#code-of-conduct"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">参与本项目请遵守贡献者契约</font></font><a href="https://www.apache.org/foundation/policies/conduct" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">行为准则</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">贡献者</font></font></h2><a id="user-content-contributors" class="anchor" aria-label="永久链接：贡献者" href="#contributors"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们感谢所有开发人员的贡献。请参阅</font></font><a href="https://github.com/apache/seatunnel/graphs/contributors"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">贡献者列表</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如何编译</font></font></h2><a id="user-content-how-to-compile" class="anchor" aria-label="永久链接：如何编译" href="#how-to-compile"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请参阅此</font></font><a href="/apache/seatunnel/blob/dev/docs/en/contribution/setup.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文档</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">以了解编译说明。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">联系我们</font></font></h2><a id="user-content-contact-us" class="anchor" aria-label="固定链接：联系我们" href="#contact-us"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">邮件列表：</font></font><strong><a href="mailto:dev@seatunnel.apache.org"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">dev@seatunnel.apache.org</font></font></a></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。发送电子邮件至即可订阅</font></font><code>dev-subscribe@seatunnel.apache.org</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+</li>
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Slack：</font></font><a href="https://s.apache.org/seatunnel-slack" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">加入 SeaTunnel Slack</font></font></a></p>
+</li>
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Twitter：</font></font><a href="https://twitter.com/ASFSeaTunnel" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Twitter 上的 ASFSeaTunnel</font></font></a></p>
+</li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">景观</font></font></h2><a id="user-content-landscapes" class="anchor" aria-label="固定链接：风景" href="#landscapes"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SeaTunnel 丰富了</font></font><a href="https://landscape.cncf.io/?landscape=observability-and-analysis&amp;license=apache-license-2-0" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">CNCF CLOUD NATIVE 景观</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Apache SeaTunnel Web 项目</font></font></h2><a id="user-content-apache-seatunnel-web-project" class="anchor" aria-label="永久链接：Apache SeaTunnel Web 项目" href="#apache-seatunnel-web-project"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SeaTunnel Web 是一个提供可视化作业管理、调度、运行和监控能力的 Web 项目，基于 SeaTunnel Connector API 和 SeaTunnel Zeta Engine 开发，是一个可独立部署的 Web 项目，也是 SeaTunnel 的一个子项目，更多信息请参考</font></font><a href="https://github.com/apache/seatunnel-web"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SeaTunnel Web</font></font></a></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们的用户</font></font></h2><a id="user-content-our-users" class="anchor" aria-label="永久链接：我们的用户" href="#our-users"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">全球各地的公司和组织都使用 SeaTunnel 进行研究、生产和商业产品。请访问我们的</font></font><a href="https://seatunnel.apache.org/user" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用户页面</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">了解更多信息。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">执照</font></font></h2><a id="user-content-license" class="anchor" aria-label="永久链接：许可证" href="#license"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><a href="/apache/seatunnel/blob/dev/LICENSE"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Apache 2.0 许可证</font></font></a></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">经常问的问题</font></font></h2><a id="user-content-frequently-asked-questions" class="anchor" aria-label="固定链接：常见问题" href="#frequently-asked-questions"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1. 如何安装 SeaTunnel？</font></font></h3><a id="user-content-1-how-do-i-install-seatunnel" class="anchor" aria-label="永久链接：1. 如何安装 SeaTunnel？" href="#1-how-do-i-install-seatunnel"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">按照我们网站上的</font></font><a href="https://seatunnel.apache.org/docs/2.3.3/start-v2/locally/deployment/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装指南</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">开始。</font></font></p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2. 我如何为 SeaTunnel 做出贡献？</font></font></h3><a id="user-content-2-how-can-i-contribute-to-seatunnel" class="anchor" aria-label="永久链接：2. 我如何为 SeaTunnel 做出贡献？" href="#2-how-can-i-contribute-to-seatunnel"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">欢迎大家投稿！详情</font><font style="vertical-align: inherit;">请参阅我们的</font></font><a href="https://github.com/apache/seatunnel/blob/dev/docs/en/contribution/coding-guide.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">投稿指南。</font></font></a><font style="vertical-align: inherit;"></font></p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3. 如何报告问题或请求功能？</font></font></h3><a id="user-content-3-how-do-i-report-issues-or-request-features" class="anchor" aria-label="永久链接：3. 如何报告问题或请求功能？" href="#3-how-do-i-report-issues-or-request-features"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"></font><a href="https://github.com/apache/seatunnel/issues"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您可以在我们的GitHub 存储库</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">上报告问题或请求功能</font><font style="vertical-align: inherit;">。</font></font></p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">4. 我可以将 SeaTunnel 用于商业用途吗？</font></font></h3><a id="user-content-4-can-i-use-seatunnel-for-commercial-purposes" class="anchor" aria-label="永久链接：4. 我可以将 SeaTunnel 用于商业目的吗？" href="#4-can-i-use-seatunnel-for-commercial-purposes"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">是的，SeaTunnel 在 Apache 2.0 许可下可用，允许商业使用。</font></font></p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">5. 在哪里可以找到文档和教程？</font></font></h3><a id="user-content-5-where-can-i-find-documentation-and-tutorials" class="anchor" aria-label="永久链接：5. 我在哪里可以找到文档和教程？" href="#5-where-can-i-find-documentation-and-tutorials"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们的</font></font><a href="https://seatunnel.apache.org/docs" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">官方文档</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">包含详细的指南和教程，以帮助您入门。</font></font></p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">7. 有社区或支持渠道吗？</font></font></h3><a id="user-content-7-is-there-a-community-or-support-channel" class="anchor" aria-label="永久链接：7. 有社区或支持渠道吗？" href="#7-is-there-a-community-or-support-channel"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">加入我们的 Slack 社区以获得支持和讨论：</font></font><a href="https://s.apache.org/seatunnel-slack" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SeaTunnel Slack</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+</article></div>
